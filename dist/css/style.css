@@ -314,8 +314,8 @@ header svg {
 
 .certificates p {
     text-align: justify;
-    margin-left: 80px;
-    margin-right: 80px;    
+    margin-left: 50px;
+    margin-right: 50px;    
 }
 
 .certificates-container {    
@@ -323,7 +323,7 @@ header svg {
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     margin-top: 0px;
-    padding: 80px;      
+    padding: 80px; 
 }
 
 .certificates-container .certificates-card {
@@ -353,13 +353,13 @@ header svg {
 
 
 @media (max-width: 768px) {
-  .certificates-container {
+  .certificates-container .certificates-card {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 480px) {
-  .certificates-container {
+  .certificates-container .certificates-card {
     grid-template-columns: 1fr;
   }
 }
@@ -399,7 +399,7 @@ footer .social a{
 }
 
 .fa-square-instagram {
-    color: #e4405f;;
+    color: #e4405f;
 }
 .fa-square-linkedin {
     color: #0077b5;
@@ -418,12 +418,6 @@ footer .social a{
     color: white;
 }
 
-@media (max-width:768px){
-    footer {
-        flex-direction: column-reverse;
-        gap: 20px;          
-    }
-}
 /* contact */
 
 /* Scroll To Top */
