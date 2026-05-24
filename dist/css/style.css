@@ -313,14 +313,16 @@ header svg {
 
 }
 
-.certificates > p {
-    max-width: 900px;
+certificates > p {
+    width: 100%;
+    max-width: 1400px;
+
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 60px;
 
     text-align: justify;
     line-height: 1.8;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .certificates-container {    
@@ -362,6 +364,10 @@ header svg {
   .certificates-container {
     grid-template-columns: repeat(2, 1fr);
   }
+.certificates > p {
+        padding: 0 15px;
+        font-size: 15px;
+        line-height: 1.7;
 }
 
 @media (max-width: 480px) {
@@ -381,7 +387,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;    
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 10px;
 }
 
@@ -398,7 +404,10 @@ footer span {
 footer .social a{
     color: white;
     text-decoration: none;
-    font-size: 40px;    
+    font-size: 40px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .fa-facebook {
