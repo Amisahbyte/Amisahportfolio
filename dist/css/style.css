@@ -383,94 +383,59 @@ certificates > p {
 footer {
     background-color: #00cba9;
     margin-top: -10px;
-    padding: 25px 15px;
-
+    padding: 20px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-
-    gap: 15px;
-    text-align: center;
-}
-
-/* Copyright */
-footer p {
-    color: white;
-    margin: 0;
-    font-size: 16px;
+    align-items: center;    
+    flex-direction: column-reverse;
+    gap: 10px;
 }
 
 footer span {
     font-weight: bold;
 }
 
-/* Social Media */
-footer .social {
+ footer .social {
     display: flex;
-    justify-content: center;
-    align-items: center;
-
     gap: 20px;
-    flex-wrap: wrap;
 }
 
-/* Icon */
-footer .social a {
+footer .social a{
+    color: white;
     text-decoration: none;
-    font-size: 38px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    transition: 0.3s ease;
+    font-size: 40px;
 }
 
-/* Colors */
 .fa-facebook {
     color: #3b5998;
 }
 
 .fa-square-instagram {
-    color: #e4405f;
+    color: #e4405f;;
 }
-
 .fa-square-linkedin {
     color: #0077b5;
 }
 
-/* Hover */
-footer .social a:hover {
-    transform: scale(1.1);
-}
 
-.fa-facebook:hover,
-.fa-square-instagram:hover,
-.fa-square-linkedin:hover {
+.fa-facebook:hover {
     color: white;
 }
 
-@media (max-width: 576px) {
-
-    footer {
-        padding: 20px 10px;
-        gap: 12px;
-    }
-
-    footer p {
-        font-size: 14px;
-    }
-
-    footer .social {
-        gap: 15px;
-    }
-
-    footer .social a {
-        font-size: 28px;
-    }
+.fa-square-instagram:hover {
+    color: white
 }
 
+.fa-square-linkedin:hover {
+    color: white;
+}
+@media (max-width:768px){
+    footer {
+        flex-direction: column-reverse;
+        gap: 20px;          
+    }
+}
+    
 /* contact */
 
 /* Scroll To Top */
