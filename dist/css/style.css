@@ -404,12 +404,14 @@ footer span {
 footer .social a{
     color: white;
     text-decoration: none;
-    font-size: 40px;   
-    display: flex;
+    font-size: 40px;     
+} 
+.social a{ 
+     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+    
 .fa-facebook {
     color: #3b5998;
 }
