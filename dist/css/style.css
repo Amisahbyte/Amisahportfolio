@@ -217,8 +217,8 @@ header svg {
 @media (max-width: 992px) {
     .about-box .box:nth-child(1) {
         grid-template-columns: 1fr;
-        gap: 30px; /* Perkecil jarak antara gambar dan teks */
-        text-align: center; /* Agar teks otomatis rata tengah di HP */
+        gap: 30px; 
+        text-align: center; 
     }
 
     .about-box .box:nth-child(1) img {
@@ -228,6 +228,128 @@ header svg {
 }
     
 /* About */
+
+/* Education */
+/* --- PAGE HEADER --- */
+.page-header {
+    color: #555;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.page-header p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* --- CONTENT --- */
+.content {
+    padding: 4rem 0;
+}
+
+.section-block {
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    color: #1D2129;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.section-title i {
+    color: #00cba9;
+}
+
+.card {
+    background-color: #00cba9;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.highlight-card {
+    border-left: 4px solid #393c3c81;
+    background-color: #00cba9e5;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 0.8rem;
+}
+
+.card-header h3 {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.year-badge {
+    background-color: #00cba9;
+    color: #f8feff;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.status-badge {
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.university {
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+}
+
+.description {
+    color: white;
+    font-size: 1rem;
+}
+
+.cert-type {
+    color:#555 ;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+}
+
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 1rem;
+    }
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+}
+/* Penutup Education */
 
 
 /* Project */
@@ -298,24 +420,26 @@ header svg {
 /* Project */
 
 /* Certificates */
+
 .certificates {
     background-color: #00cba9;
     padding-block: 10px;
     color: white;
     margin-top: -10px;
-    padding: 50px;
+    padding: 50px;    
 }
+
 .certificates h2 {
     text-align: center;
     font-size: 40px;
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 30px;    
 }
 
 .certificates p {
     text-align: justify;
-    margin-left: 80px;
-    margin-right: 80px;    
+    margin-left: 50px;
+    margin-right: 50px;        
 }
 
 .certificates-container {    
@@ -323,7 +447,9 @@ header svg {
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     margin-top: 0px;
-    padding: 80px;      
+    padding: 80px;   
+    max-width: 1400px;   
+    margin: auto;
 }
 
 .certificates-container .certificates-card {
@@ -365,6 +491,174 @@ header svg {
 }
 
 /* Certificates */
+
+
+/* Leadership */
+.leadership-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card activity-section {
+    max-width: 1200px;
+    margin: auto;
+}
+/* Section Title */
+.section-title {
+    font-size: 1.8rem;
+    color: #1d4ed8;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.7rem;
+    border-bottom: 2px solid #bfdbfe;
+}
+
+/* Info Box */
+.info-box {
+    background: #eff6ff;
+    padding: 1.2rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #2563eb;
+}
+
+.info-box p {
+    margin: 0.3rem 0;
+    color: #1e3a8a;
+}
+
+/* Intro Text */
+.intro-text {
+    font-size: 1.05rem;
+    margin-bottom: 2.2rem;
+    color: #fff;
+    text-align: justify;
+}
+
+/* Activity Item */
+.activity-item {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.8rem;
+    border-bottom: 1px dashed #e2e8f0;
+}
+
+.activity-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.activity-title {
+    font-size: 1.3rem;
+    color: #1e40af;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.activity-description {
+    color: #fff;
+    margin-bottom: 1.2rem;
+    text-align: justify;
+}
+
+/* Image Gallery */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Social Link */
+.social-section {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e2e8f0;
+}
+
+.facebook-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #1877f2;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.facebook-link:hover {
+    color: #0d65d9;
+    text-decoration: underline;
+}
+
+/* Modal Style */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 2rem;
+}
+
+#modalImage {
+    display: block;
+    max-width: 90%;
+    max-height: 85vh;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.close-btn:hover {
+    color: #cccccc;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+    .card {
+        padding: 1.8rem;
+    }
+    .section-title {
+        font-size: 1.5rem;
+    }
+    .activity-title {
+        font-size: 1.15rem;
+    }
+    .image-gallery {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 /* contact */
@@ -467,3 +761,5 @@ footer .social a{
      }
     }
 /* Scroll To Top */
+
+
