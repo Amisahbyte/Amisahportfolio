@@ -571,6 +571,7 @@ header svg {
     margin-bottom: 0.8rem;
     border-left: 3px solid #2563eb;
     padding-left: 10px;
+    text-align: left;
 }
 
 .info-box p {
@@ -599,13 +600,14 @@ header svg {
     padding-bottom: 0;
 }
 
-.activity-title {
+.activity-item h3 {
     font-size: 1.3rem;
     color: #1e40af;
     margin-bottom: 0.8rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    text-align: left;
 }
 
 .activity-description {
