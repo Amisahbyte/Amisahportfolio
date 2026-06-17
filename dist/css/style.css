@@ -543,12 +543,6 @@ header svg {
 
 
 /* Leadership */
-.leadership-container {
-    width: 100%;    
-    max-width: 1200px;
-    margin:auto  
-}
-
 .section-title {
     font-size: 1.8rem;
     color: #1d4ed8;
