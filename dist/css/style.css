@@ -445,25 +445,23 @@ header svg {
 }
 
 .certificates h3 {
-     width: 100%;
-    max-width: 1200px;
+    width: 100%;   
     margin: 0 auto;    
-    text-align: justify;
-    text-justify: inter-word; 
-    line-height: 1.8;
+    text-align: left;   
+    line-height: 1.6;
     font-size: 20px;    
-    margin-top: 20px;
+    margin-top: 25px;
+    padding: 0 15px;
+    color: #1e293b;
 }
 
-.certificates > p {
-    width: 100%;
-    max-width: 1200px;
+.certificates p {
+    width: 100%;    
     margin: 0 auto;    
     text-align: justify;
-    text-justify: inter-word;
-    line-height: 1.8;
-    font-size: 18px;
-    margin-bottom: 10px;
+    /* text-justify: inter-word; */
+    line-height: 1.8;    
+    margin-bottom: 10px;   
 }
 
 .certificates-container {    
@@ -471,8 +469,7 @@ header svg {
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     margin-top: 0px;
-    padding: 0; 
-    max-width: 1200px;   
+    padding: 0;     
     margin: auto;
 }
 
@@ -547,8 +544,9 @@ header svg {
 
 /* Leadership */
 .leadership-container {
+    width: 100%;    
     max-width: 1200px;
-    margin: auto;
+    margin:auto  
 }
 
 .section-title {
@@ -644,13 +642,15 @@ header svg {
     margin-top: 2rem;
     padding-top: 1.5rem;
     border-top: 1px solid #e2e8f0;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 .facebook-link {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    color: #1877f2;
+    color: blue;
     font-size: 1.1rem;
     font-weight: 500;
     text-decoration: none;
@@ -687,15 +687,18 @@ header svg {
 
 .activity-images {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
   margin-top: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 5px;
 }
 
 
 .activity-images img {
   width: 100%;
-  height: 150px;       
+  height: 200px;       
   object-fit: cover;    
   border-radius: 6px;
   box-shadow: 1px 1px 6px rgba(0,0,0,0.1);
@@ -763,13 +766,13 @@ header svg {
 
 
 @media (min-width: 481px) and (max-width: 768px) {
-  .image-gallery {
+   .activity-images {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 }
 
 @media (max-width: 480px) {
-  .image-gallery {
+   .activity-images {
     grid-template-columns: 1fr !important;
   }
 }
@@ -779,59 +782,77 @@ header svg {
 footer {
     background-color: #00cba9;
     margin-top: -10px;
-    padding: 20px;
+    padding: 25px 20px;
     display: flex;
     justify-content: center;
     align-items: center;    
-    flex-direction: column-reverse;
-    gap: 10px;
+    flex-direction: column; 
+    gap: 15px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer p {
+    margin: 0 auto; 
+    color: white; 
+    font-size: 16px; 
+    text-align: center !important; 
+    width: 100% !important; 
+    display: block;
 }
 
 footer span {
     font-weight: bold;
 }
 
- footer .social {
+footer .social {
     display: flex;
-    gap: 20px;
+    gap: 20px;  
+    justify-content: center;   
+    width: 100%;
 }
 
-footer .social a{
+footer .social a {
     color: white;
     text-decoration: none;
     font-size: 40px;
+    transition: opacity 0.2s ease;
 }
 
 .fa-facebook {
     color: #3b5998;
 }
-
 .fa-square-instagram {
-    color: #e4405f;;
+    color: #e4405f;
 }
 .fa-square-linkedin {
     color: #0077b5;
 }
 
-
 .fa-facebook:hover {
     color: white;
 }
-
 .fa-square-instagram:hover {
-    color: white
+    color: white;
 }
-
 .fa-square-linkedin:hover {
     color: white;
 }
+
 @media (max-width:768px){
     footer {
-        flex-direction: column-reverse;
-        gap: 20px;          
+        flex-direction: column; 
+        gap: 12px;          
+        padding: 20px 15px;
     }
-}
-    
+    footer p {
+        font-size: 14px;
+    }
+    footer .social a {
+        font-size: 35px;
+    }
+}    
 /* contact */
 
 /* Scroll To Top */
