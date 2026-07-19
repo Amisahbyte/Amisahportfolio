@@ -394,7 +394,7 @@ header svg {
 
 .project-box .project-desc h2 {
     text-align: center;
-    font-size: 20px;
+    font-size: 20px;   
 }
 
 .project-box .project-desc p {
@@ -409,19 +409,33 @@ header svg {
 .project-box .project-desc .project-bnt {
     display: flex;
     align-items: center;
-    justify-content: space-between;      
+    justify-content: space-between;
+    padding: 20px;     
 }
 
 .project-box .project-desc .project-bnt a{
     background-color: #00cba9;
-    padding: 10px 20px;
+    padding: 7px 10px;
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 14px;
 }
 
 .project-box .project-desc .project-bnt a:hover{
     background-color: #1E293B;
+}
+
+.hidden{
+    display: none;
+}
+
+.project-desc-text{
+    margin-top: 15px;
+    color: #fff;
+    line-height: 1.6;
+    text-align: justify;
+    width: 100%;
 }
 
 @media (max-width:768px) {
