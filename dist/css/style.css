@@ -368,7 +368,7 @@ header svg {
 }
 .project-box {    
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     margin-top: 50px;
 }
@@ -382,14 +382,20 @@ header svg {
 .project-box .box img{
     width: 100%;
     border-radius: 10px;   
-    height: 250px;       
+    height: 200px;       
     object-fit: cover; 
+    display: block;
+    transition: transform 0.3s ease;
 }
 
 .project-box .project-desc {
     margin-top: 20px;
 }
 
+.project-box .project-desc h2 {
+    text-align: center;
+    font-size: 20px;
+}
 
 .project-box .project-desc p {
     line-height: 2;
